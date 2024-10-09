@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.div1 {
+	margin: auto;
+	width: 80%;
+	overflow: hidden;
+}
+
+.span1 {
+	color: purple;
+}
+
+.giphy-embed {
+	border: 0;
+	width: 5%;
+	position: absolute;
+	margin-top: -2%;
+	margin-left: 2%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background: black;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-bottom: 3px purple solid;
+	border-width: 10px;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
+header li {
+	display: inline;
+	padding: 0 20px 0 20px;
+	float: right;
+}
+
+header .div1 h1 {
+	margin: 0;
+	float: left;
+}
+
+header nav {
+	margin-top: 10px;
+}
+
+h1 {
+	font-family: cursive;
+}
+
+#sezione1 {
+	min-height: 1080px;
+	background-image: url('https://wallpaperaccess.com/full/1377991.jpg');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	font-size: 30px;
+	z-index: 1;
+	position: relative; /* permette di far posizionare abslute in relazione ad una prima posizione */
+}
+
+#sezione1::after {
+	content: ''; /* rende visisbile l'elemento creato dall'after */
+    position: absolute; /* posiziona l'elemento all'interno della sezione1 */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+p {
+	justify-content: center; /* orizzontale centrato*/
+	align-items: center; /* verticale centrato*/
+	display: flex; /* rende flex gli elementi */
+	height: 100vh; /* centra gli elementi figli di p per il 100% dell'altezza della pagina */
+}
+
+.bottone1 {
+	background: purple;
+	color: white;
+	border: 2px solid gray;
+	border-radius: 10px;
+	padding: 4px;
+	height: 38px;
+	width: 250px;
+	font-weight: bold;
+}
+
+.bottone1:hover {
+	background: rgb(163, 156, 156);
+	color: white;
+	border: 3px solid purple;
+	cursor: pointer;
+}
+
+#sezione2 {
+	padding: 15px;
+	color: white;
+	background: black;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-top: 3px purple solid;
+	border-width: 10px;
+}
+
+#sezione2 h1 {
+	float: left;
+}
+
+#sezione2 form {
+	float: right;
+	margin-top: 15px;
+}
+
+#sezione2 input[type="email"] {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+#autore {
+	text-decoration: none;
+	color: rgb(180, 18, 180);
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#autore:hover {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 50px;
+	font-weight: bold;
+	animation: feedin 1s;
+}
